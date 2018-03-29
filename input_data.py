@@ -71,7 +71,8 @@ def read_clip_and_label(filename, batch_size, start_pos=-1, num_frames_per_clip=
     dirname = line[0]
     tmp_label = line[1]
     if not shuffle:
-      print("Loading a video clip from {}...".format(dirname))
+      pass
+      #print("Loading a video clip from {}...".format(dirname))
     tmp_data, _ = get_frames_data(dirname, num_frames_per_clip)
     img_datas = [];
     if(len(tmp_data)!=0):
@@ -102,5 +103,13 @@ def read_clip_and_label(filename, batch_size, start_pos=-1, num_frames_per_clip=
 
   np_arr_data = np.array(data).astype(np.float32)
   np_arr_label = np.array(label).astype(np.int64)
-
+  #print(np_arr_data.shape)
+  #print(np_arr_label)
   return np_arr_data, np_arr_label, next_batch_start, read_dirnames, valid_len
+
+test_list_file = 'list/all.list'
+read_clip_and_label(
+                    test_list_file,
+                    1,
+                    start_pos=0
+                    )

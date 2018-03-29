@@ -1,0 +1,6 @@
+*.model
+*.avi
+*.jpg
+UCF-101
+*.npy
+*.pyc
