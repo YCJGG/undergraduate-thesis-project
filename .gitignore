@@ -4,3 +4,4 @@
 UCF-101
 *.npy
 *.pyc
+*.bmc
