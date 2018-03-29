@@ -1,7 +1,7 @@
 # C3D-tensorflow
 
 This is a repository trying to implement [C3D-caffe][5] on tensorflow,useing models directly converted from original C3D-caffe.    
-Be aware that there are about 5% video-level accuracy margin on UCF101 split1  between our implement in tensorflow and  the original C3D-caffe.  
+Be aware that there are about 5% video-level accuracy margin on UCF101 split1  between our implement in tensorflow and  the original C3D-caffe. And I modify the code to extract the full/partial features. 
 
 ## Requirements:
 
@@ -47,6 +47,7 @@ database/ucf101/train/BalanceBeam/v_BalanceBeam_g01_c04 4
 4. `C3D-tensorflow-1.0/Random_clip_valid.py` code is compatible with tensorflow 1.0+ , with a little bit different with the old repository
 5. IMPORTANT NOTE: when you load the sports1m_finetuning_ucf101.model,you should use the tranpose operation like:` pool5 = tf.transpose(pool5, perm=[0,1,4,2,3])`,or in `Random_clip_valid.py` looks like:`["transpose", [0, 1, 4, 2, 3]]`, 
 but if you load `conv3d_deepnetA_sport1m_iter_1900000_TF.model` or `c3d_ucf101_finetune_whole_iter_20000_TF.model`,you don't need tranpose operation,just comment that line code.  
+5. 'python extract_full/partial_features.py' will extract the full or partial features.
 
 ##  Experiment result:
 - Note:              
