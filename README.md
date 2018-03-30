@@ -9,6 +9,7 @@ Be aware that there are about 5% video-level accuracy margin on UCF101 split1  b
 2. You must have installed the following two python libs:
 a) [tensorflow][1]
 b) [Pillow][2]
+c) [Pytorch][8]
 3. You must have downloaded the [UCF101][3] (Action Recognition Data Set)
 4. Each single avi file is decoded with 5FPS (it's depend your decision) in a single directory.
     - you can use the `./list/convert_video_to_images.sh` script to decode the ucf101 video files
@@ -106,3 +107,4 @@ but if you load `conv3d_deepnetA_sport1m_iter_1900000_TF.model` or `c3d_ucf101_f
 [5]: https://github.com/facebook/C3D
 [6]: http://vlg.cs.dartmouth.edu/c3d/
 [7]:https://github.com/hx173149/C3D-tensorflow
+[8]:https://github.com/pytorch/pytorch
