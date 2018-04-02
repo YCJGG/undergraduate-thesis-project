@@ -7,7 +7,7 @@ import numpy as np
 from torchvision import models
 import argparse
 import networks
-from networks import GANLoss
+from networks import GANLoss, Generator, Discriminator
 import torch.optim as optim
 
 
@@ -134,13 +134,13 @@ for epoch in range(opt.train_epoch):
         # train with fake
         fake_ab = torch.cat((pf,fakef),1)
         # bs * 2 * 4096 
-        pred_fake = D(fake_ab)
+        pred_fake = D.forward(fake_ab.detach())
         # bs * 2 * 64
         loss_d_fake = criterionGAN(pred_fake, False)
         # train with real
         real_ab = torch.cat((pf,ff),1)
         # bs * 2 * 4096
-        pred_real = D(real_ab)
+        pred_real = D.forward(real_ab)
         # bs * 2 * 64
         loss_d_real = criterionGAN(pred_real, True)
         
@@ -159,7 +159,7 @@ for epoch in range(opt.train_epoch):
          # First, G(A) should fake the discriminator
         fake_ab = torch.cat((pf,fakef),1)
         
-        pred_fake = D(fake_ab)
+        pred_fake = D.forward(fake_ab)
         loss_g_gan = criterionGAN(pred_fake, True)
          # Second, G(A) = B
         loss_g_l1 = criterionL1(fakef, ff) * opt.lamb
@@ -168,8 +168,28 @@ for epoch in range(opt.train_epoch):
         
         loss_g.backward()
         G_optimizer.step()
-        print("===> Epoch[{}]({}/{}): Loss_D: {:.4f} Loss_G: {:.4f}".format(
-            epoch, iteration, len(train_loader), loss_d.data[0], loss_g.data[0]))
+
+        H_optimizer.zero_grad()
+        fakef = G(pf)
+        H_fake = H(fakef)
+        H_real = H(ff)
+        temp = torch.zeros(H_real.data.size())
+        for i , ind in enumerate(batch_ind):
+            temp[i, :] = B[ind, :]
+            H_[ind, :] = H_real.data[i]
+        temp = Variable(temp.cuda())
+        regterm1 = (temp - H_fake).pow(2).sum()
+        regterm2 = (temp - H_real).pow(2).sum()
+        regterm3 = (H_real - H_fake).pow(2).sum()
+        
+        H_loss = (regterm1 +regterm2 + regterm3)/opt.batch_size
+        
+        H_loss.backward()
+        H_optimizer.step()
+
+
+        print("===> Epoch[{}]({}/{}): Loss_D: {:.4f} Loss_G: {:.4f} Loss_H: {:.4f}".format(
+            epoch, iteration, len(train_loader), loss_d.data[0], loss_g.data[0],H_loss.data[0]))
 
 
 

@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
+from torch.autograd import Variable
 
 class Generator(nn.Module):
     # initializers
@@ -37,7 +38,7 @@ class Hashnet(nn.Module):
         self.map3 = nn.Linear(hidden_size, output_size)
 
     def forward(self, x):
-        x = F.elu(self.map1(input))
+        x = F.elu(self.map1(x))
         x = F.elu(self.map2(x))
         return self.map3(x)
 
