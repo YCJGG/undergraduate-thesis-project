@@ -9,6 +9,7 @@ import argparse
 import networks
 from networks import GANLoss, Generator, Discriminator
 import torch.optim as optim
+import CalcHammingRanking as CalcHR
 
 
 parser = argparse.ArgumentParser()
@@ -22,8 +23,8 @@ parser.add_argument('--d_output_size', type = int, default= 64 , help = "output 
 parser.add_argument('--h_input_size', type = int, default= 4096, help = "input size of Hashnet")
 parser.add_argument('--h_hidden_size', type = int, default= 1024, help = "hidden size of Hashnet")
 parser.add_argument('--bit', type = int, default= 32 , help = "output size of Hashnet")
-parser.add_argument('--lrG', type = float, default = 1e-4, help = "learning rate of generator" )
-parser.add_argument('--lrD', type = float, default = 1e-4, help = "learning rate of discriminator" )
+parser.add_argument('--lrG', type = float, default = 1e-5, help = "learning rate of generator" )
+parser.add_argument('--lrD', type = float, default = 1e-5, help = "learning rate of discriminator" )
 parser.add_argument('--lrH', type = float, default = 1e-4, help = "learning rate of Hashnet" )
 parser.add_argument('--beta1', type = float, default = 0.5, help = "beta1 for Adam optimizer" )
 parser.add_argument('--beta2', type = float, default = 0.999, help = "beta2 for Adam optimizer" )
@@ -99,7 +100,7 @@ print("###training start~~~~")
 B = torch.sign(torch.randn(num_train, opt.bit))
 H_ = torch.zeros(num_train,opt.bit)
 
-
+itr = 0
 for epoch in range(opt.train_epoch):
     # E step
     temp1 = Y.t().mm(Y) +torch.eye(nclasses)
@@ -187,11 +188,34 @@ for epoch in range(opt.train_epoch):
         H_loss.backward()
         H_optimizer.step()
 
-
+        
         print("===> Epoch[{}]({}/{}): Loss_D: {:.4f} Loss_G: {:.4f} Loss_H: {:.4f}".format(
-            epoch, iteration, len(train_loader), loss_d.data[0], loss_g.data[0],H_loss.data[0]))
+            epoch, itr, len(train_loader), loss_d.data[0], loss_g.data[0],H_loss.data[0]))
+        itr+=1
 
+    # test per epoch
+    G.eval()
+    H.eval()
+    T = np.zeros([num_test,opt.bit],dtype = np.float32)
+    for iter, batch in enumerate(test_loader, 0):
+        ff = batch[0]
+        pf = batch[1]
+        label = batch[2]
+        batch_ind = batch[3]
+        #ff = Variable(ff.cuda(),volatile = True)
+        pf = Variable(pf.cuda(),volatile = True)
+        fakef = G(pf)
+        H_fake = H(fakef)
+        H_fake = H_fake.squeeze()
+        T[batch_ind.numpy(),:] = torch.sign(H_fake.cpu().data).numpy()
 
+    # map
+    H_B = np.sign(H_.cpu().numpy())
+    map = CalcHR.CalcMap(T,H_B,test_labels_onehot.numpy(),train_labels_onehot.numpy())
+    print('####################################')
+    print('map:',map)
+    print('####################################')
+ 
 
 
 
