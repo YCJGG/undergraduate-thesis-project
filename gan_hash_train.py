@@ -7,6 +7,7 @@ import numpy as np
 from torchvision import models
 import argparse
 import networks
+from networks import GANLoss
 import torch.optim as optim
 
 
