@@ -22,7 +22,7 @@ parser.add_argument('--d_hidden_size', type = int, default= 1024, help = "hidden
 parser.add_argument('--d_output_size', type = int, default= 64 , help = "output size of discriminator")
 parser.add_argument('--h_input_size', type = int, default= 4096, help = "input size of Hashnet")
 parser.add_argument('--h_hidden_size', type = int, default= 1024, help = "hidden size of Hashnet")
-parser.add_argument('--bit', type = int, default= 32 , help = "output size of Hashnet")
+parser.add_argument('--bit', type = int, default= 64 , help = "output size of Hashnet")
 parser.add_argument('--lrG', type = float, default = 2e-4, help = "learning rate of generator" )
 parser.add_argument('--lrD', type = float, default = 2e-5, help = "learning rate of discriminator" )
 parser.add_argument('--lrH', type = float, default = 2e-4, help = "learning rate of Hashnet" )
@@ -100,9 +100,13 @@ print("###training start~~~~")
 B = torch.sign(torch.randn(num_train, opt.bit))
 H_ = torch.zeros(num_train,opt.bit)
 
+max_map = 0
 itr = 0
 file = open(str(opt.lrG)+'_' + str(opt.lrD)+'_' + str(opt.lrH)+'_' + str(opt.bit) + '.log','a')
 for epoch in range(opt.train_epoch):
+    # adjust the lr 
+    H_optimizer.param_groups[0]['lr'] = opt.lrH*(0.1**(epoch//100))
+
     # E step
     temp1 = Y.t().mm(Y) +torch.eye(nclasses)
     temp1 = temp1.inverse()
@@ -191,7 +195,7 @@ for epoch in range(opt.train_epoch):
 
         
         print("===> Epoch[{}]({}/{}): Loss_D: {:.4f} Loss_G: {:.4f} Loss_H: {:.4f}".format(
-            epoch, itr, len(train_loader), loss_d.data[0], loss_g.data[0],H_loss.data[0]))
+            epoch, itr, len(train_loader)*opt.batch_size, loss_d.data[0], loss_g.data[0],H_loss.data[0]))
         itr+=1
 
     # test per epoch
@@ -218,7 +222,12 @@ for epoch in range(opt.train_epoch):
     map = round(map,5)
     file.write(str(map) +'\n')
     print('####################################')
- 
+    if map > max_map:
+        max_map = map
+        np.save("H_B.npy",H_B)
+        np.save('test.npy',T)
+        np.save('train_label.npy',train_labels_onehot.numpy())
+        np.save('test_label.npy',test_labels_onehot.numpy())
 
 
 
