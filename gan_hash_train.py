@@ -17,18 +17,18 @@ parser.add_argument('--batch_size', type = int, default= 128, help = "batch size
 parser.add_argument('--g_input_size', type = int, default= 4096, help = "input size of generator")
 parser.add_argument('--g_hidden_size', type = int, default= 8192, help = "hidden size of generator")
 parser.add_argument('--g_output_size', type = int, default= 4096, help = "output size of generator")
-parser.add_argument('--d_input_size', type = int, default= 4096, help = "input size of discriminator")
+parser.add_argument('--d_input_size', type = int, default= 4096*2, help = "input size of discriminator")
 parser.add_argument('--d_hidden_size', type = int, default= 1024, help = "hidden size of discriminator")
 parser.add_argument('--d_output_size', type = int, default= 64 , help = "output size of discriminator")
 parser.add_argument('--h_input_size', type = int, default= 4096, help = "input size of Hashnet")
 parser.add_argument('--h_hidden_size', type = int, default= 1024, help = "hidden size of Hashnet")
 parser.add_argument('--bit', type = int, default= 32 , help = "output size of Hashnet")
-parser.add_argument('--lrG', type = float, default = 1e-5, help = "learning rate of generator" )
-parser.add_argument('--lrD', type = float, default = 1e-5, help = "learning rate of discriminator" )
-parser.add_argument('--lrH', type = float, default = 1e-4, help = "learning rate of Hashnet" )
+parser.add_argument('--lrG', type = float, default = 2e-4, help = "learning rate of generator" )
+parser.add_argument('--lrD', type = float, default = 2e-5, help = "learning rate of discriminator" )
+parser.add_argument('--lrH', type = float, default = 2e-4, help = "learning rate of Hashnet" )
 parser.add_argument('--beta1', type = float, default = 0.5, help = "beta1 for Adam optimizer" )
 parser.add_argument('--beta2', type = float, default = 0.999, help = "beta2 for Adam optimizer" )
-parser.add_argument('--train_epoch', type = int, default = 100, help = "training epochs")
+parser.add_argument('--train_epoch', type = int, default = 150, help = "training epochs")
 parser.add_argument('--lamb', type = float, default = 10, help = "lambada")
 opt = parser.parse_args()
 
@@ -101,6 +101,7 @@ B = torch.sign(torch.randn(num_train, opt.bit))
 H_ = torch.zeros(num_train,opt.bit)
 
 itr = 0
+file = open(str(opt.lrG)+'_' + str(opt.lrD)+'_' + str(opt.lrH)+'_' + str(opt.bit) + '.log','a')
 for epoch in range(opt.train_epoch):
     # E step
     temp1 = Y.t().mm(Y) +torch.eye(nclasses)
@@ -133,13 +134,13 @@ for epoch in range(opt.train_epoch):
         # train generator D
         D_optimizer.zero_grad()
         # train with fake
-        fake_ab = torch.cat((pf,fakef),1)
+        fake_ab = torch.cat((pf,fakef),2)
         # bs * 2 * 4096 
         pred_fake = D.forward(fake_ab.detach())
         # bs * 2 * 64
         loss_d_fake = criterionGAN(pred_fake, False)
         # train with real
-        real_ab = torch.cat((pf,ff),1)
+        real_ab = torch.cat((pf,ff),2)
         # bs * 2 * 4096
         pred_real = D.forward(real_ab)
         # bs * 2 * 64
@@ -158,7 +159,7 @@ for epoch in range(opt.train_epoch):
 
         G_optimizer.zero_grad()
          # First, G(A) should fake the discriminator
-        fake_ab = torch.cat((pf,fakef),1)
+        fake_ab = torch.cat((pf,fakef),2)
         
         pred_fake = D.forward(fake_ab)
         loss_g_gan = criterionGAN(pred_fake, True)
@@ -214,6 +215,8 @@ for epoch in range(opt.train_epoch):
     map = CalcHR.CalcMap(T,H_B,test_labels_onehot.numpy(),train_labels_onehot.numpy())
     print('####################################')
     print('map:',map)
+    map = round(map,5)
+    file.write(str(map) +'\n')
     print('####################################')
  
 
