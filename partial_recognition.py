@@ -12,12 +12,15 @@ def LoadLabel(filename):
     return torch.LongTensor(list(map(int,labels)))
 
 
+bit = 128
+
+
 # load training data
-train_data = np.load('H_B.npy')
+train_data = np.load(str(bit)+'H_B.npy')
 train_label = LoadLabel('train.list')
 
 #load test data
-test_data = np.load('test.npy')
+test_data = np.load(str(bit)+'test.npy')
 test_label = LoadLabel('test.list')
 
 
@@ -26,7 +29,7 @@ test_label = LoadLabel('test.list')
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
-        self.l1 = nn.Linear(32, 101)
+        self.l1 = nn.Linear(bit, 101)
 
     def forward(self, x):
       
@@ -66,10 +69,10 @@ def train(epoch):
         loss.backward()
         # update
         optimizer.step()
-        if index % 128*10 == 0:
-            print('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(
-                epoch, index, len(train_data),
-                100. * index / len(train_data), loss.data[0]))
+        # if index % 128*10 == 0:
+        #     print('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(
+        #         epoch, index, len(train_data),
+        #         100. * index / len(train_data), loss.data[0]))
 def test():
     test_loss = 0
     correct = 0.0
@@ -99,8 +102,9 @@ def test():
     print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n'.format(
         test_loss, correct, len(test_data),
         100. * correct / len(test_data)))
+    print(correct/len(test_data))
 
-for epoch in range(1,200):
+for epoch in range(1,40):
     train(epoch)
     test()
 

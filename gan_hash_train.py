@@ -224,8 +224,8 @@ for epoch in range(opt.train_epoch):
     print('####################################')
     if map > max_map:
         max_map = map
-        np.save("H_B.npy",H_B)
-        np.save('test.npy',T)
+        np.save(str(opt.bit)+"H_B.npy",H_B)
+        np.save(str(opt.bit)+'test.npy',T)
         np.save('train_label.npy',train_labels_onehot.numpy())
         np.save('test_label.npy',test_labels_onehot.numpy())
 
