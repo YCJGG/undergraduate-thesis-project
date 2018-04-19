@@ -27,21 +27,27 @@ import numpy as np
 import cv2
 import time
 
-def get_frames_data(filename, num_frames_per_clip=16):
+def get_frames_data(filename, num_frames_per_clip=1):
   ''' Given a directory containing extracted frames, return a video clip of
   (num_frames_per_clip) consecutive frames as a list of np arrays '''
   ret_arr = []
   s_index = 0
+  filename = filename.replace('~','/home/zhangjingyi')
   for parent, dirnames, filenames in os.walk(filename):
     if(len(filenames)<num_frames_per_clip):
       return [], s_index
     filenames = sorted(filenames)
+    #print(filenames)
     s_index = random.randint(0, len(filenames) - num_frames_per_clip)
     for i in range(s_index, s_index + num_frames_per_clip):
       image_name = str(filename) + '/' + str(filenames[i])
+      #print(image_name)
       img = Image.open(image_name)
       img_data = np.array(img)
       ret_arr.append(img_data)
+    if num_frames_per_clip == 1:
+      while (len(ret_arr) < 16):
+        ret_arr.append(img_data)
   return ret_arr, s_index
 
 def read_clip_and_label(filename, batch_size, start_pos=-1, num_frames_per_clip=16, crop_size=112, shuffle=False):
@@ -69,11 +75,13 @@ def read_clip_and_label(filename, batch_size, start_pos=-1, num_frames_per_clip=
       break
     line = lines[index].strip('\n').split()
     dirname = line[0]
+    
     tmp_label = line[1]
     if not shuffle:
       pass
       #print("Loading a video clip from {}...".format(dirname))
-    tmp_data, _ = get_frames_data(dirname, num_frames_per_clip)
+    tmp_data, _ = get_frames_data(dirname)
+    #print(tmp_data)
     img_datas = [];
     if(len(tmp_data)!=0):
       for j in xrange(len(tmp_data)):

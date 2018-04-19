@@ -88,7 +88,7 @@ def run_test():
   saver.restore(sess, model_name)
   next_start_pos = 0
   all_steps = int((num_test_videos - 1) / (FLAGS.batch_size * gpu_num) + 1)
-  file = open('partial_feature.list','a')
+  file = open('one_pic_feature.list','a')
   for step in xrange(all_steps):
     test_images, test_labels, next_start_pos, dirs, valid_len = \
             input_data.read_clip_and_label(
@@ -101,8 +101,8 @@ def run_test():
     f = normalize(f)
     
     label = test_labels[0]
-    np.save('./partial_features/'+str(step)+'.npy',f)
-    file.write('./partial_features/'+str(step)+'.npy'+' '+str(label)+'\n')
+    np.save('./one_pic_feature/'+str(step)+'.npy',f)
+    file.write('./one_pic_feature/'+str(step)+'.npy'+' '+str(label)+'\n')
 
 
     #print(f)
