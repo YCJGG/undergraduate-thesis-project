@@ -20,19 +20,18 @@ from __future__ import print_function
 
 import os
 from six.moves import xrange  # pylint: disable=redefined-builtin
-import tensorflow as tf
 import PIL.Image as Image
 import random
 import numpy as np
 import cv2
 import time
 
-def get_frames_data(filename, num_frames_per_clip=1):
+def get_frames_data(filename, num_frames_per_clip=16):
   ''' Given a directory containing extracted frames, return a video clip of
   (num_frames_per_clip) consecutive frames as a list of np arrays '''
   ret_arr = []
   s_index = 0
-  filename = filename.replace('~','/home/zhangjingyi')
+  filename = filename.replace('~','/home/zhang')
   for parent, dirnames, filenames in os.walk(filename):
     if(len(filenames)<num_frames_per_clip):
       return [], s_index
@@ -115,7 +114,7 @@ def read_clip_and_label(filename, batch_size, start_pos=-1, num_frames_per_clip=
   #print(np_arr_label)
   return np_arr_data, np_arr_label, next_batch_start, read_dirnames, valid_len
 
-test_list_file = 'list/all.list'
+test_list_file = 'list/image.list'
 read_clip_and_label(
                     test_list_file,
                     1,

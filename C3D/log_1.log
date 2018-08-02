@@ -1,0 +1,24 @@
+nohup: ignoring input
+###training start~~~~
+0, train Loss: 3.3039 Acc: 0.1676
+0, test Loss: 2.7695 Acc: 0.3216 Time:87.3819
+1, train Loss: 2.0938 Acc: 0.4242
+1, test Loss: 2.6636 Acc: 0.3452 Time:85.3603
+2, train Loss: 1.5055 Acc: 0.5701
+2, test Loss: 1.8231 Acc: 0.5487 Time:85.3523
+3, train Loss: 1.1415 Acc: 0.6681
+3, test Loss: 1.9035 Acc: 0.5689 Time:86.9485
+4, train Loss: 0.8672 Acc: 0.7446
+4, test Loss: 1.8399 Acc: 0.5556 Time:84.1413
+5, train Loss: 0.6823 Acc: 0.8008
+5, test Loss: 1.9371 Acc: 0.5867 Time:85.1769
+6, train Loss: 0.5585 Acc: 0.8390
+6, test Loss: 1.7819 Acc: 0.6288 Time:87.8653
+7, train Loss: 0.4530 Acc: 0.8658
+7, test Loss: 1.8518 Acc: 0.6127 Time:84.0075
+8, train Loss: 0.3152 Acc: 0.9102
+8, test Loss: 2.1409 Acc: 0.5752 Time:83.7354
+9, train Loss: 0.2994 Acc: 0.9098
+9, test Loss: 2.1879 Acc: 0.5914 Time:85.8876
+10, train Loss: 0.2435 Acc: 0.9320
+10, test Loss: 2.0888 Acc: 0.5781 Time:85.1218

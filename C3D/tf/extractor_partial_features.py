@@ -41,7 +41,7 @@ def _variable_with_weight_decay(name, shape, stddev, wd):
 
 def run_test():
   model_name = "./sports1m_finetuning_ucf101.model"
-  test_list_file = 'list/all.list'
+  test_list_file = 'list/image.list'
   num_test_videos = len(list(open(test_list_file,'r')))
   print("Number of test videos={}".format(num_test_videos))
 
@@ -88,7 +88,7 @@ def run_test():
   saver.restore(sess, model_name)
   next_start_pos = 0
   all_steps = int((num_test_videos - 1) / (FLAGS.batch_size * gpu_num) + 1)
-  file = open('one_pic_feature.list','a')
+  file = open('partial_features.list','a')
   for step in xrange(all_steps):
     test_images, test_labels, next_start_pos, dirs, valid_len = \
             input_data.read_clip_and_label(
@@ -99,10 +99,10 @@ def run_test():
     
     f = sess.run(featues,feed_dict = {images_placeholder: test_images})
     f = normalize(f)
-    
+    filename = dir.split('/')[-1]
     label = test_labels[0]
-    np.save('./one_pic_feature/'+str(step)+'.npy',f)
-    file.write('./one_pic_feature/'+str(step)+'.npy'+' '+str(label)+'\n')
+    np.save('./partial_features/'+filename+'.npy',f)
+    file.write('./partial_features/'+filename+'.npy'+' '+str(label)+'\n')
 
 
     #print(f)

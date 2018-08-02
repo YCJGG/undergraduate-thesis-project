@@ -41,7 +41,7 @@ def _variable_with_weight_decay(name, shape, stddev, wd):
 
 def run_test():
   model_name = "./sports1m_finetuning_ucf101.model"
-  test_list_file = 'list/all.list'
+  test_list_file = 'list/image.list'
   num_test_videos = len(list(open(test_list_file,'r')))
   print("Number of test videos={}".format(num_test_videos))
 

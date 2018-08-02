@@ -1,0 +1,550 @@
+nohup: ignoring input
+###training start~~~~
+0, train Loss: 34668110190.2812 Acc: 0.0217
+0, test Loss: 4.0690 Acc: 0.0208 Time:86.3718
+1, train Loss: 3.9238 Acc: 0.0751
+1, test Loss: 4.0472 Acc: 0.0761 Time:86.2471
+2, train Loss: 3.9856 Acc: 0.0827
+2, test Loss: 4.0346 Acc: 0.0761 Time:83.6429
+3, train Loss: 3.8877 Acc: 0.0829
+3, test Loss: 4.0266 Acc: 0.0761 Time:83.9767
+4, train Loss: 3.8779 Acc: 0.0827
+4, test Loss: 4.0243 Acc: 0.0761 Time:84.8102
+5, train Loss: 3.8747 Acc: 0.0827
+5, test Loss: 4.0235 Acc: 0.0761 Time:85.4781
+6, train Loss: 3.8745 Acc: 0.0827
+6, test Loss: 4.0237 Acc: 0.0761 Time:85.9016
+7, train Loss: 3.8739 Acc: 0.0827
+7, test Loss: 4.0239 Acc: 0.0761 Time:86.9352
+8, train Loss: 3.8736 Acc: 0.0827
+8, test Loss: 4.0246 Acc: 0.0761 Time:83.5619
+9, train Loss: 3.8745 Acc: 0.0827
+9, test Loss: 4.0245 Acc: 0.0761 Time:85.5021
+10, train Loss: 3.8738 Acc: 0.0827
+10, test Loss: 4.0241 Acc: 0.0761 Time:84.0037
+11, train Loss: 3.8737 Acc: 0.0827
+11, test Loss: 4.0249 Acc: 0.0761 Time:86.4645
+12, train Loss: 3.8744 Acc: 0.0827
+12, test Loss: 4.0248 Acc: 0.0761 Time:83.5565
+13, train Loss: 3.8745 Acc: 0.0827
+13, test Loss: 4.0249 Acc: 0.0761 Time:85.5746
+14, train Loss: 3.8741 Acc: 0.0827
+14, test Loss: 4.0249 Acc: 0.0761 Time:84.1055
+15, train Loss: 3.8738 Acc: 0.0827
+15, test Loss: 4.0248 Acc: 0.0761 Time:86.5052
+16, train Loss: 3.8739 Acc: 0.0827
+16, test Loss: 4.0245 Acc: 0.0761 Time:84.2664
+17, train Loss: 3.8748 Acc: 0.0827
+17, test Loss: 4.0245 Acc: 0.0761 Time:85.4508
+18, train Loss: 4.2087 Acc: 0.0829
+18, test Loss: 4.0237 Acc: 0.0761 Time:85.0328
+19, train Loss: 3.8853 Acc: 0.0827
+19, test Loss: 4.0243 Acc: 0.0761 Time:85.6155
+20, train Loss: 3.8819 Acc: 0.0819
+20, test Loss: 4.0250 Acc: 0.0761 Time:85.4574
+21, train Loss: 3.8755 Acc: 0.0827
+21, test Loss: 4.0251 Acc: 0.0761 Time:83.7723
+22, train Loss: 3.8738 Acc: 0.0827
+22, test Loss: 4.0251 Acc: 0.0761 Time:85.9010
+23, train Loss: 3.8759 Acc: 0.0827
+23, test Loss: 4.0248 Acc: 0.0761 Time:83.8767
+24, train Loss: 3.8771 Acc: 0.0815
+24, test Loss: 4.0255 Acc: 0.0761 Time:83.2226
+25, train Loss: 3.8744 Acc: 0.0827
+25, test Loss: 4.0250 Acc: 0.0761 Time:85.8189
+26, train Loss: 3.9119 Acc: 0.0825
+26, test Loss: 4.0238 Acc: 0.0761 Time:83.0752
+27, train Loss: 3.8755 Acc: 0.0821
+27, test Loss: 4.0251 Acc: 0.0761 Time:86.1977
+28, train Loss: 3.8747 Acc: 0.0827
+28, test Loss: 4.0251 Acc: 0.0761 Time:84.1669
+29, train Loss: 3.8739 Acc: 0.0827
+29, test Loss: 4.0250 Acc: 0.0761 Time:84.4544
+###training start~~~~
+0, train Loss: 61142.4262 Acc: 0.0290
+0, test Loss: 6.3487 Acc: 0.0761 Time:87.5564
+1, train Loss: 12737.9572 Acc: 0.0227
+1, test Loss: 4.0719 Acc: 0.0415 Time:84.2096
+2, train Loss: 3.9980 Acc: 0.0344
+2, test Loss: 4.0637 Acc: 0.0761 Time:82.9128
+3, train Loss: 3.9306 Acc: 0.0805
+3, test Loss: 4.0555 Acc: 0.0761 Time:85.3565
+4, train Loss: 3.9232 Acc: 0.0825
+4, test Loss: 4.0481 Acc: 0.0761 Time:86.0312
+5, train Loss: 3.9097 Acc: 0.0827
+5, test Loss: 4.0415 Acc: 0.0761 Time:83.2668
+6, train Loss: 3.9027 Acc: 0.0827
+6, test Loss: 4.0360 Acc: 0.0761 Time:82.8779
+7, train Loss: 14284922.9755 Acc: 0.0743
+7, test Loss: 4.0319 Acc: 0.0761 Time:82.9016
+8, train Loss: 45472209.8676 Acc: 0.0819
+8, test Loss: 4.0286 Acc: 0.0761 Time:84.3169
+9, train Loss: 31276450.0557 Acc: 0.0823
+9, test Loss: 4.0262 Acc: 0.0761 Time:84.6430
+10, train Loss: 7596023.0830 Acc: 0.0823
+10, test Loss: 4.0245 Acc: 0.0761 Time:86.0843
+11, train Loss: 201861.6346 Acc: 0.0827
+11, test Loss: 4.0236 Acc: 0.0761 Time:83.4149
+12, train Loss: 3.8757 Acc: 0.0827
+12, test Loss: 4.0231 Acc: 0.0761 Time:83.3289
+13, train Loss: 283402.5800 Acc: 0.0827
+13, test Loss: 4.0229 Acc: 0.0761 Time:85.2116
+14, train Loss: 375.5399 Acc: 0.0827
+14, test Loss: 4.0229 Acc: 0.0761 Time:82.8473
+15, train Loss: 192606.2973 Acc: 0.0827
+15, test Loss: 4.0231 Acc: 0.0761 Time:84.6813
+16, train Loss: 3.8721 Acc: 0.0827
+16, test Loss: 4.0235 Acc: 0.0761 Time:83.3882
+17, train Loss: 3678.8822 Acc: 0.0827
+17, test Loss: 4.0237 Acc: 0.0761 Time:83.4168
+18, train Loss: 37405.4062 Acc: 0.0827
+18, test Loss: 4.0239 Acc: 0.0761 Time:87.5021
+19, train Loss: 911.7277 Acc: 0.0827
+19, test Loss: 4.0240 Acc: 0.0761 Time:85.5768
+20, train Loss: 3.8715 Acc: 0.0827
+20, test Loss: 4.0243 Acc: 0.0761 Time:85.2980
+21, train Loss: 624.1362 Acc: 0.0827
+21, test Loss: 4.0245 Acc: 0.0761 Time:83.6100
+22, train Loss: 3.8718 Acc: 0.0827
+22, test Loss: 4.0247 Acc: 0.0761 Time:83.3601
+23, train Loss: 3.8715 Acc: 0.0827
+23, test Loss: 4.0248 Acc: 0.0761 Time:84.5876
+24, train Loss: 3.8723 Acc: 0.0827
+24, test Loss: 4.0249 Acc: 0.0761 Time:83.4616
+25, train Loss: 3.8714 Acc: 0.0827
+25, test Loss: 4.0249 Acc: 0.0761 Time:83.3527
+26, train Loss: 21.2544 Acc: 0.0827
+26, test Loss: 4.0250 Acc: 0.0761 Time:83.4403
+27, train Loss: 3.8722 Acc: 0.0827
+27, test Loss: 4.0251 Acc: 0.0761 Time:86.4999
+28, train Loss: 4.5491 Acc: 0.0825
+28, test Loss: 4.0252 Acc: 0.0761 Time:86.2846
+29, train Loss: 830377.9971 Acc: 0.0821
+29, test Loss: 4.0269 Acc: 0.0761 Time:86.7875
+###training start~~~~
+0, train Loss: 6.6360 Acc: 0.0437
+0, test Loss: 4.0729 Acc: 0.0761 Time:86.9656
+1, train Loss: 4.9889 Acc: 0.0443
+1, test Loss: 4.0535 Acc: 0.0726 Time:84.3064
+2, train Loss: 4.0049 Acc: 0.0704
+2, test Loss: 4.0399 Acc: 0.0761 Time:85.1750
+3, train Loss: 3.9352 Acc: 0.0739
+3, test Loss: 5.4642 Acc: 0.0236 Time:86.9641
+4, train Loss: 3.8023 Acc: 0.0865
+4, test Loss: 3.8058 Acc: 0.0980 Time:83.4041
+5, train Loss: 3.6309 Acc: 0.0946
+5, test Loss: 3.8073 Acc: 0.0957 Time:85.2945
+6, train Loss: 3.5738 Acc: 0.1065
+6, test Loss: 3.7779 Acc: 0.0980 Time:85.6044
+7, train Loss: 3.4885 Acc: 0.1199
+7, test Loss: 3.5083 Acc: 0.1383 Time:83.6360
+8, train Loss: 3.5644 Acc: 0.1240
+8, test Loss: 3.9655 Acc: 0.0836 Time:85.4300
+9, train Loss: 6.0635 Acc: 0.1008
+9, test Loss: 4.0988 Acc: 0.0202 Time:86.4250
+10, train Loss: 6.0479 Acc: 0.0676
+10, test Loss: 4.0700 Acc: 0.0761 Time:84.1558
+11, train Loss: 4.2436 Acc: 0.0819
+11, test Loss: 4.0653 Acc: 0.0761 Time:85.0267
+12, train Loss: 3.9339 Acc: 0.0827
+12, test Loss: 4.1383 Acc: 0.0190 Time:83.2192
+13, train Loss: 3.9811 Acc: 0.0735
+13, test Loss: 4.0572 Acc: 0.0761 Time:85.4428
+14, train Loss: 3.9252 Acc: 0.0827
+14, test Loss: 4.0535 Acc: 0.0761 Time:83.7742
+15, train Loss: 3.9178 Acc: 0.0827
+15, test Loss: 4.0500 Acc: 0.0761 Time:83.8854
+16, train Loss: 3.9136 Acc: 0.0827
+16, test Loss: 4.0468 Acc: 0.0761 Time:85.3949
+17, train Loss: 3.9092 Acc: 0.0827
+17, test Loss: 4.0438 Acc: 0.0761 Time:83.1247
+18, train Loss: 3.9039 Acc: 0.0825
+18, test Loss: 4.0307 Acc: 0.0761 Time:84.4259
+19, train Loss: 3.8937 Acc: 0.0827
+19, test Loss: 4.0242 Acc: 0.0761 Time:83.4466
+20, train Loss: 3.8874 Acc: 0.0827
+20, test Loss: 4.0241 Acc: 0.0761 Time:85.4601
+21, train Loss: 3.8915 Acc: 0.0827
+21, test Loss: 4.0310 Acc: 0.0761 Time:84.4775
+22, train Loss: 3.8929 Acc: 0.0827
+22, test Loss: 4.0290 Acc: 0.0761 Time:85.6695
+23, train Loss: 3.8969 Acc: 0.0829
+23, test Loss: 4.0349 Acc: 0.0761 Time:84.2459
+24, train Loss: 3.8926 Acc: 0.0823
+24, test Loss: 4.0330 Acc: 0.0761 Time:85.6249
+25, train Loss: 3.8900 Acc: 0.0827
+25, test Loss: 4.0313 Acc: 0.0761 Time:83.7694
+26, train Loss: 3.8881 Acc: 0.0827
+26, test Loss: 4.0298 Acc: 0.0761 Time:83.8014
+27, train Loss: 3.8844 Acc: 0.0827
+27, test Loss: 4.0285 Acc: 0.0761 Time:87.0231
+28, train Loss: 3.8828 Acc: 0.0827
+28, test Loss: 4.0274 Acc: 0.0761 Time:82.8254
+29, train Loss: 3.8814 Acc: 0.0827
+29, test Loss: 4.0264 Acc: 0.0761 Time:83.9713
+###training start~~~~
+0, train Loss: 3.9523 Acc: 0.0686
+0, test Loss: 3.9401 Acc: 0.0519 Time:86.8879
+1, train Loss: 3.7094 Acc: 0.0978
+1, test Loss: 3.6557 Acc: 0.1228 Time:86.8193
+2, train Loss: 3.4856 Acc: 0.1260
+2, test Loss: 3.4474 Acc: 0.1608 Time:85.9768
+3, train Loss: 3.9969 Acc: 0.1119
+3, test Loss: 3.5927 Acc: 0.1360 Time:83.3030
+4, train Loss: 3.1673 Acc: 0.1805
+4, test Loss: 3.1901 Acc: 0.1937 Time:84.6642
+5, train Loss: 2.7738 Acc: 0.2669
+5, test Loss: 2.8226 Acc: 0.2911 Time:82.4554
+6, train Loss: 2.4178 Acc: 0.3405
+6, test Loss: 2.8482 Acc: 0.2830 Time:83.2873
+7, train Loss: 2.1116 Acc: 0.4158
+7, test Loss: 2.5420 Acc: 0.3539 Time:83.6654
+8, train Loss: 1.7930 Acc: 0.4969
+8, test Loss: 2.5524 Acc: 0.3798 Time:84.5249
+9, train Loss: 1.5549 Acc: 0.5627
+9, test Loss: 2.4868 Acc: 0.4150 Time:85.8704
+10, train Loss: 1.3438 Acc: 0.6253
+10, test Loss: 2.3140 Acc: 0.4565 Time:82.7251
+11, train Loss: 1.1602 Acc: 0.6601
+11, test Loss: 2.4507 Acc: 0.4467 Time:84.0833
+12, train Loss: 1.0452 Acc: 0.7016
+12, test Loss: 2.5406 Acc: 0.4461 Time:83.5382
+13, train Loss: 0.8757 Acc: 0.7472
+13, test Loss: 2.4560 Acc: 0.4611 Time:86.7860
+14, train Loss: 0.7444 Acc: 0.7889
+14, test Loss: 2.4650 Acc: 0.4772 Time:86.2412
+15, train Loss: 0.6882 Acc: 0.8018
+15, test Loss: 2.5007 Acc: 0.4951 Time:85.7274
+16, train Loss: 0.6069 Acc: 0.8332
+16, test Loss: 2.5416 Acc: 0.4934 Time:85.3446
+17, train Loss: 0.5719 Acc: 0.8406
+17, test Loss: 2.5659 Acc: 0.4743 Time:86.4950
+18, train Loss: 0.4732 Acc: 0.8658
+18, test Loss: 2.8181 Acc: 0.4876 Time:83.4945
+19, train Loss: 0.4394 Acc: 0.8762
+19, test Loss: 2.6315 Acc: 0.5078 Time:82.7347
+20, train Loss: 0.4208 Acc: 0.8843
+20, test Loss: 2.6555 Acc: 0.4790 Time:82.2101
+21, train Loss: 0.4044 Acc: 0.8893
+21, test Loss: 2.7740 Acc: 0.4818 Time:84.8892
+22, train Loss: 0.3503 Acc: 0.8980
+22, test Loss: 2.6769 Acc: 0.5210 Time:86.8370
+23, train Loss: 0.3235 Acc: 0.9086
+23, test Loss: 2.9409 Acc: 0.4801 Time:92.6057
+24, train Loss: 0.3107 Acc: 0.9177
+24, test Loss: 2.8167 Acc: 0.5118 Time:94.3834
+25, train Loss: 0.3025 Acc: 0.9143
+25, test Loss: 2.8391 Acc: 0.5228 Time:95.4999
+26, train Loss: 0.2918 Acc: 0.9223
+26, test Loss: 2.8997 Acc: 0.5147 Time:92.7006
+27, train Loss: 0.2794 Acc: 0.9215
+27, test Loss: 2.9337 Acc: 0.5032 Time:97.0381
+28, train Loss: 0.2990 Acc: 0.9191
+28, test Loss: 2.8653 Acc: 0.5032 Time:97.7034
+29, train Loss: 0.2456 Acc: 0.9298
+29, test Loss: 3.0560 Acc: 0.4940 Time:99.8952
+###training start~~~~
+0, train Loss: 3.1588 Acc: 0.1998
+0, test Loss: 2.5198 Acc: 0.3470 Time:96.6512
+1, train Loss: 1.9291 Acc: 0.4641
+1, test Loss: 2.3544 Acc: 0.4254 Time:94.1509
+2, train Loss: 1.3865 Acc: 0.6104
+2, test Loss: 1.7207 Acc: 0.5533 Time:94.1726
+3, train Loss: 1.0551 Acc: 0.6925
+3, test Loss: 1.7562 Acc: 0.5787 Time:92.1232
+4, train Loss: 0.8050 Acc: 0.7631
+4, test Loss: 1.5196 Acc: 0.6282 Time:95.3781
+5, train Loss: 0.6524 Acc: 0.8096
+5, test Loss: 1.9069 Acc: 0.5914 Time:97.0969
+6, train Loss: 0.5123 Acc: 0.8527
+6, test Loss: 1.5942 Acc: 0.6346 Time:88.9215
+7, train Loss: 0.4243 Acc: 0.8746
+7, test Loss: 1.7705 Acc: 0.6271 Time:83.5177
+8, train Loss: 0.3675 Acc: 0.8919
+8, test Loss: 1.7922 Acc: 0.6421 Time:86.6678
+9, train Loss: 0.2672 Acc: 0.9261
+9, test Loss: 1.9100 Acc: 0.6380 Time:83.4306
+10, train Loss: 0.2318 Acc: 0.9378
+10, test Loss: 1.8047 Acc: 0.6380 Time:84.5324
+11, train Loss: 0.1970 Acc: 0.9410
+11, test Loss: 2.3159 Acc: 0.6098 Time:83.9436
+12, train Loss: 0.1917 Acc: 0.9467
+12, test Loss: 1.9703 Acc: 0.6369 Time:84.5899
+13, train Loss: 0.1409 Acc: 0.9610
+13, test Loss: 1.8834 Acc: 0.6519 Time:83.4639
+14, train Loss: 0.1245 Acc: 0.9672
+14, test Loss: 2.1266 Acc: 0.6386 Time:84.5837
+15, train Loss: 0.1333 Acc: 0.9636
+15, test Loss: 2.0289 Acc: 0.6329 Time:85.8487
+16, train Loss: 0.1261 Acc: 0.9682
+16, test Loss: 2.1941 Acc: 0.6167 Time:85.4154
+17, train Loss: 0.1006 Acc: 0.9740
+17, test Loss: 2.1633 Acc: 0.6392 Time:83.6976
+18, train Loss: 0.0984 Acc: 0.9734
+18, test Loss: 2.1641 Acc: 0.6271 Time:83.4593
+19, train Loss: 0.0963 Acc: 0.9714
+19, test Loss: 2.1669 Acc: 0.6098 Time:85.6961
+20, train Loss: 0.0919 Acc: 0.9744
+20, test Loss: 2.1738 Acc: 0.6236 Time:86.6698
+21, train Loss: 0.0967 Acc: 0.9734
+21, test Loss: 2.1509 Acc: 0.6081 Time:85.0482
+22, train Loss: 0.0921 Acc: 0.9769
+22, test Loss: 2.2601 Acc: 0.6208 Time:85.2382
+23, train Loss: 0.1227 Acc: 0.9650
+23, test Loss: 2.1808 Acc: 0.6403 Time:86.1284
+24, train Loss: 0.0617 Acc: 0.9831
+24, test Loss: 2.2053 Acc: 0.6300 Time:86.4114
+25, train Loss: 0.0939 Acc: 0.9726
+25, test Loss: 2.2951 Acc: 0.6046 Time:87.4256
+26, train Loss: 0.0895 Acc: 0.9756
+26, test Loss: 2.0610 Acc: 0.6507 Time:85.0022
+27, train Loss: 0.0692 Acc: 0.9801
+27, test Loss: 2.0845 Acc: 0.6427 Time:87.1245
+28, train Loss: 0.0515 Acc: 0.9865
+28, test Loss: 2.1989 Acc: 0.6300 Time:86.3997
+29, train Loss: 0.0664 Acc: 0.9843
+29, test Loss: 2.3241 Acc: 0.6282 Time:83.9532
+###training start~~~~
+0, train Loss: 3.1714 Acc: 0.2067
+0, test Loss: 2.2763 Acc: 0.4248 Time:88.0967
+1, train Loss: 1.9992 Acc: 0.4530
+1, test Loss: 1.7934 Acc: 0.5424 Time:86.4779
+2, train Loss: 1.5578 Acc: 0.5663
+2, test Loss: 1.6352 Acc: 0.5787 Time:83.9853
+3, train Loss: 1.2616 Acc: 0.6428
+3, test Loss: 1.5574 Acc: 0.6023 Time:83.6779
+4, train Loss: 1.0415 Acc: 0.6957
+4, test Loss: 1.4906 Acc: 0.6311 Time:83.2217
+5, train Loss: 0.8796 Acc: 0.7456
+5, test Loss: 1.3744 Acc: 0.6559 Time:82.9672
+6, train Loss: 0.7343 Acc: 0.7833
+6, test Loss: 1.4066 Acc: 0.6605 Time:84.8750
+7, train Loss: 0.6108 Acc: 0.8197
+7, test Loss: 1.6964 Acc: 0.6438 Time:85.8157
+8, train Loss: 0.5342 Acc: 0.8418
+8, test Loss: 1.5438 Acc: 0.6605 Time:85.0930
+9, train Loss: 0.4427 Acc: 0.8783
+9, test Loss: 1.5070 Acc: 0.6340 Time:85.3573
+10, train Loss: 0.4030 Acc: 0.8782
+10, test Loss: 1.5168 Acc: 0.6559 Time:83.4068
+11, train Loss: 0.3363 Acc: 0.9012
+11, test Loss: 1.5155 Acc: 0.6686 Time:83.8536
+12, train Loss: 0.2552 Acc: 0.9235
+12, test Loss: 1.6400 Acc: 0.6617 Time:83.1247
+13, train Loss: 0.2266 Acc: 0.9338
+13, test Loss: 1.7394 Acc: 0.6576 Time:85.1535
+14, train Loss: 0.2078 Acc: 0.9376
+14, test Loss: 1.6436 Acc: 0.6623 Time:84.2648
+15, train Loss: 0.1977 Acc: 0.9424
+15, test Loss: 1.5542 Acc: 0.6674 Time:85.7782
+16, train Loss: 0.1435 Acc: 0.9575
+16, test Loss: 1.6379 Acc: 0.6772 Time:84.2304
+17, train Loss: 0.1539 Acc: 0.9593
+17, test Loss: 1.6457 Acc: 0.6588 Time:85.4320
+18, train Loss: 0.1354 Acc: 0.9638
+18, test Loss: 1.7299 Acc: 0.6715 Time:85.2319
+19, train Loss: 0.1254 Acc: 0.9646
+19, test Loss: 1.7596 Acc: 0.6686 Time:83.2709
+20, train Loss: 0.1214 Acc: 0.9636
+20, test Loss: 1.7152 Acc: 0.6738 Time:83.6206
+21, train Loss: 0.1020 Acc: 0.9742
+21, test Loss: 1.7746 Acc: 0.6398 Time:83.4813
+22, train Loss: 0.1069 Acc: 0.9676
+22, test Loss: 1.7870 Acc: 0.6663 Time:85.4460
+23, train Loss: 0.0919 Acc: 0.9771
+23, test Loss: 1.7413 Acc: 0.6715 Time:85.6880
+24, train Loss: 0.0696 Acc: 0.9799
+24, test Loss: 1.7634 Acc: 0.6692 Time:86.2173
+25, train Loss: 0.0731 Acc: 0.9803
+25, test Loss: 1.8871 Acc: 0.6692 Time:87.0096
+26, train Loss: 0.0860 Acc: 0.9754
+26, test Loss: 1.7140 Acc: 0.6640 Time:85.0573
+27, train Loss: 0.0618 Acc: 0.9821
+27, test Loss: 1.9663 Acc: 0.6738 Time:85.1741
+28, train Loss: 0.0541 Acc: 0.9833
+28, test Loss: 2.1187 Acc: 0.6582 Time:86.8666
+29, train Loss: 0.0681 Acc: 0.9797
+29, test Loss: 1.8310 Acc: 0.6738 Time:83.2392
+###training start~~~~
+0, train Loss: 3.7230 Acc: 0.0932
+0, test Loss: 3.3228 Acc: 0.2219 Time:87.2640
+1, train Loss: 2.8284 Acc: 0.2697
+1, test Loss: 2.3985 Acc: 0.4386 Time:84.9701
+2, train Loss: 2.1773 Acc: 0.4222
+2, test Loss: 2.0612 Acc: 0.4986 Time:83.1505
+3, train Loss: 1.8374 Acc: 0.5001
+3, test Loss: 1.8464 Acc: 0.5481 Time:83.1001
+4, train Loss: 1.6167 Acc: 0.5567
+4, test Loss: 1.6931 Acc: 0.5683 Time:84.1471
+5, train Loss: 1.4485 Acc: 0.5907
+5, test Loss: 1.6435 Acc: 0.5902 Time:83.5810
+6, train Loss: 1.3163 Acc: 0.6269
+6, test Loss: 1.5817 Acc: 0.6092 Time:85.6599
+7, train Loss: 1.1737 Acc: 0.6639
+7, test Loss: 1.5265 Acc: 0.6184 Time:83.3050
+8, train Loss: 1.0721 Acc: 0.6963
+8, test Loss: 1.4893 Acc: 0.6277 Time:84.1047
+9, train Loss: 0.9819 Acc: 0.7152
+9, test Loss: 1.4604 Acc: 0.6375 Time:85.0977
+10, train Loss: 0.8769 Acc: 0.7484
+10, test Loss: 1.4672 Acc: 0.6386 Time:84.6008
+11, train Loss: 0.8324 Acc: 0.7593
+11, test Loss: 1.4385 Acc: 0.6409 Time:84.6819
+12, train Loss: 0.7540 Acc: 0.7776
+12, test Loss: 1.5229 Acc: 0.6277 Time:86.1856
+13, train Loss: 0.6954 Acc: 0.7981
+13, test Loss: 1.4389 Acc: 0.6559 Time:84.5893
+14, train Loss: 0.6381 Acc: 0.8096
+14, test Loss: 1.4408 Acc: 0.6553 Time:82.6252
+15, train Loss: 0.5917 Acc: 0.8253
+15, test Loss: 1.4442 Acc: 0.6576 Time:85.5809
+16, train Loss: 0.5295 Acc: 0.8444
+16, test Loss: 1.4334 Acc: 0.6548 Time:83.5412
+17, train Loss: 0.4926 Acc: 0.8527
+17, test Loss: 1.5060 Acc: 0.6571 Time:84.5516
+18, train Loss: 0.4666 Acc: 0.8662
+18, test Loss: 1.4045 Acc: 0.6703 Time:86.4261
+19, train Loss: 0.4265 Acc: 0.8738
+19, test Loss: 1.5162 Acc: 0.6496 Time:85.5133
+20, train Loss: 0.3946 Acc: 0.8917
+20, test Loss: 1.5032 Acc: 0.6732 Time:85.3760
+21, train Loss: 0.3633 Acc: 0.8897
+21, test Loss: 1.4575 Acc: 0.6628 Time:84.9525
+22, train Loss: 0.3275 Acc: 0.9048
+22, test Loss: 1.5429 Acc: 0.6565 Time:83.7884
+23, train Loss: 0.3042 Acc: 0.9102
+23, test Loss: 1.5491 Acc: 0.6467 Time:85.3858
+24, train Loss: 0.2886 Acc: 0.9169
+24, test Loss: 1.5510 Acc: 0.6617 Time:83.7884
+25, train Loss: 0.2633 Acc: 0.9253
+25, test Loss: 1.6306 Acc: 0.6692 Time:85.9841
+26, train Loss: 0.2386 Acc: 0.9298
+26, test Loss: 1.5465 Acc: 0.6640 Time:84.1380
+27, train Loss: 0.2322 Acc: 0.9308
+27, test Loss: 1.5645 Acc: 0.6599 Time:83.1879
+28, train Loss: 0.2225 Acc: 0.9360
+28, test Loss: 1.5980 Acc: 0.6669 Time:85.5620
+29, train Loss: 0.1960 Acc: 0.9414
+29, test Loss: 1.7135 Acc: 0.6507 Time:84.5916
+###training start~~~~
+0, train Loss: 3.9302 Acc: 0.0473
+0, test Loss: 3.9207 Acc: 0.0951 Time:86.9939
+1, train Loss: 3.7133 Acc: 0.1010
+1, test Loss: 3.6829 Acc: 0.1366 Time:83.4974
+2, train Loss: 3.4042 Acc: 0.1540
+2, test Loss: 3.2653 Acc: 0.2490 Time:84.0873
+3, train Loss: 2.9988 Acc: 0.2471
+3, test Loss: 2.7440 Acc: 0.3545 Time:83.2066
+4, train Loss: 2.6231 Acc: 0.3252
+4, test Loss: 2.4681 Acc: 0.4173 Time:85.0004
+5, train Loss: 2.3631 Acc: 0.3681
+5, test Loss: 2.2321 Acc: 0.4732 Time:84.5133
+6, train Loss: 2.1453 Acc: 0.4363
+6, test Loss: 2.1268 Acc: 0.5049 Time:84.9246
+7, train Loss: 2.0131 Acc: 0.4458
+7, test Loss: 2.0225 Acc: 0.5130 Time:83.5972
+8, train Loss: 1.8985 Acc: 0.4906
+8, test Loss: 1.9668 Acc: 0.5216 Time:82.1721
+9, train Loss: 1.8132 Acc: 0.5073
+9, test Loss: 1.9005 Acc: 0.5493 Time:83.2784
+10, train Loss: 1.7176 Acc: 0.5279
+10, test Loss: 1.8342 Acc: 0.5527 Time:84.9222
+11, train Loss: 1.6419 Acc: 0.5452
+11, test Loss: 1.7840 Acc: 0.5545 Time:85.1621
+12, train Loss: 1.5822 Acc: 0.5635
+12, test Loss: 1.7135 Acc: 0.5746 Time:83.1173
+13, train Loss: 1.4957 Acc: 0.5864
+13, test Loss: 1.7388 Acc: 0.5729 Time:83.4944
+14, train Loss: 1.4287 Acc: 0.6001
+14, test Loss: 1.6785 Acc: 0.5821 Time:87.5680
+15, train Loss: 1.3883 Acc: 0.6076
+15, test Loss: 1.6490 Acc: 0.5810 Time:85.7292
+16, train Loss: 1.3410 Acc: 0.6186
+16, test Loss: 1.6653 Acc: 0.5764 Time:85.0944
+17, train Loss: 1.3003 Acc: 0.6359
+17, test Loss: 1.6021 Acc: 0.5994 Time:83.3613
+18, train Loss: 1.2396 Acc: 0.6398
+18, test Loss: 1.5984 Acc: 0.6017 Time:82.9862
+19, train Loss: 1.1948 Acc: 0.6635
+19, test Loss: 1.5602 Acc: 0.6023 Time:85.2671
+20, train Loss: 1.1764 Acc: 0.6657
+20, test Loss: 1.5773 Acc: 0.6087 Time:84.0939
+21, train Loss: 1.1268 Acc: 0.6790
+21, test Loss: 1.5570 Acc: 0.6104 Time:85.5612
+22, train Loss: 1.0872 Acc: 0.6859
+22, test Loss: 1.5243 Acc: 0.6115 Time:83.1960
+23, train Loss: 1.0539 Acc: 0.6983
+23, test Loss: 1.5614 Acc: 0.6017 Time:82.6347
+24, train Loss: 1.0206 Acc: 0.7076
+24, test Loss: 1.5211 Acc: 0.6219 Time:86.0219
+25, train Loss: 0.9865 Acc: 0.7118
+25, test Loss: 1.5185 Acc: 0.6271 Time:83.1475
+26, train Loss: 0.9332 Acc: 0.7362
+26, test Loss: 1.5283 Acc: 0.6236 Time:86.1520
+27, train Loss: 0.9361 Acc: 0.7305
+27, test Loss: 1.4863 Acc: 0.6271 Time:83.8521
+28, train Loss: 0.8964 Acc: 0.7362
+28, test Loss: 1.4830 Acc: 0.6403 Time:84.1883
+29, train Loss: 0.8697 Acc: 0.7466
+29, test Loss: 1.4685 Acc: 0.6352 Time:82.6225
+###training start~~~~
+0, train Loss: 4.0227 Acc: 0.0272
+0, test Loss: 4.0474 Acc: 0.0450 Time:86.4726
+1, train Loss: 3.9525 Acc: 0.0449
+1, test Loss: 3.9864 Acc: 0.0934 Time:84.0861
+2, train Loss: 3.8820 Acc: 0.0682
+2, test Loss: 3.9286 Acc: 0.1055 Time:83.3122
+3, train Loss: 3.8156 Acc: 0.0877
+3, test Loss: 3.8696 Acc: 0.1061 Time:85.3365
+4, train Loss: 3.7540 Acc: 0.0994
+4, test Loss: 3.8103 Acc: 0.1285 Time:82.7443
+5, train Loss: 3.6634 Acc: 0.1169
+5, test Loss: 3.7253 Acc: 0.1441 Time:84.2879
+6, train Loss: 3.5871 Acc: 0.1278
+6, test Loss: 3.6242 Acc: 0.1608 Time:84.6108
+7, train Loss: 3.4941 Acc: 0.1409
+7, test Loss: 3.4955 Acc: 0.1931 Time:82.5248
+8, train Loss: 3.3896 Acc: 0.1578
+8, test Loss: 3.3725 Acc: 0.2167 Time:81.8691
+9, train Loss: 3.2579 Acc: 0.1870
+9, test Loss: 3.2340 Acc: 0.2484 Time:84.7969
+10, train Loss: 3.1331 Acc: 0.2163
+10, test Loss: 3.0814 Acc: 0.2870 Time:85.0895
+11, train Loss: 3.0289 Acc: 0.2288
+11, test Loss: 2.9267 Acc: 0.3222 Time:83.8382
+12, train Loss: 2.8968 Acc: 0.2612
+12, test Loss: 2.8342 Acc: 0.3441 Time:85.3925
+13, train Loss: 2.8064 Acc: 0.2801
+13, test Loss: 2.7350 Acc: 0.3499 Time:82.7902
+14, train Loss: 2.6974 Acc: 0.3081
+14, test Loss: 2.6145 Acc: 0.3971 Time:83.1768
+15, train Loss: 2.6137 Acc: 0.3236
+15, test Loss: 2.5212 Acc: 0.4190 Time:82.9104
+16, train Loss: 2.5127 Acc: 0.3449
+16, test Loss: 2.4645 Acc: 0.4352 Time:86.4043
+17, train Loss: 2.4620 Acc: 0.3564
+17, test Loss: 2.4005 Acc: 0.4392 Time:82.5440
+18, train Loss: 2.3870 Acc: 0.3719
+18, test Loss: 2.3453 Acc: 0.4444 Time:84.1291
+19, train Loss: 2.3422 Acc: 0.3785
+19, test Loss: 2.3098 Acc: 0.4611 Time:82.3037
+20, train Loss: 2.2936 Acc: 0.3928
+20, test Loss: 2.2508 Acc: 0.4761 Time:83.2491
+21, train Loss: 2.2212 Acc: 0.4047
+21, test Loss: 2.2172 Acc: 0.4801 Time:82.4523
+22, train Loss: 2.1522 Acc: 0.4289
+22, test Loss: 2.1494 Acc: 0.4865 Time:84.9371
+23, train Loss: 2.1281 Acc: 0.4260
+23, test Loss: 2.1129 Acc: 0.4922 Time:85.7216
+24, train Loss: 2.0720 Acc: 0.4427
+24, test Loss: 2.0818 Acc: 0.4986 Time:84.4032
+25, train Loss: 2.0609 Acc: 0.4442
+25, test Loss: 2.0563 Acc: 0.4974 Time:83.8364
+26, train Loss: 1.9881 Acc: 0.4681
+26, test Loss: 2.0315 Acc: 0.5049 Time:86.2933
+27, train Loss: 1.9583 Acc: 0.4645
+27, test Loss: 1.9982 Acc: 0.5112 Time:82.7069
+28, train Loss: 1.9211 Acc: 0.4806
+28, test Loss: 1.9650 Acc: 0.5170 Time:85.7341
+29, train Loss: 1.9212 Acc: 0.4770
+29, test Loss: 1.9695 Acc: 0.5268 Time:83.1187

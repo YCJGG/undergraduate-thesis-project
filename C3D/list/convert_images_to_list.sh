@@ -22,13 +22,14 @@
 
 > train.list
 > test.list
+> image.list
 COUNT=-1
 for folder in $1/*
 do
     COUNT=$[$COUNT + 1]
     for imagesFolder in "$folder"/*
     do
-	echo "$imagesFolder" $count >> images.list
+	echo "$imagesFolder" $COUNT >> image.list
         if (( $(jot -r 1 1 $2)  > 1 )); then
             echo "$imagesFolder" $COUNT >> train.list
         else

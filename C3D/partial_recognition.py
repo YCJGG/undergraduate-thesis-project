@@ -7,21 +7,21 @@ import numpy as np
 
 def LoadLabel(filename):
     fp = open(filename,'r')
-    labels = [x.strip().split()[2] for x in fp]
+    labels = [x.strip().split()[1] for x in fp]
     fp.close()
     return torch.LongTensor(list(map(int,labels)))
 
 
-bit = 128
+bit = 64
 
 
 # load training data
 train_data = np.load(str(bit)+'H_B.npy')
-train_label = LoadLabel('train.list')
+train_label = LoadLabel('./list/train.list')
 
 #load test data
 test_data = np.load(str(bit)+'test.npy')
-test_label = LoadLabel('test.list')
+test_label = LoadLabel('./list/test.list')
 
 
 
@@ -29,7 +29,7 @@ test_label = LoadLabel('test.list')
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
-        self.l1 = nn.Linear(bit, 101)
+        self.l1 = nn.Linear(bit, 51)
 
     def forward(self, x):
       
@@ -99,12 +99,11 @@ def test():
         index+=bs
 
     test_loss /= len(test_data)
-    print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n'.format(
+    print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.2f}%)\n'.format(
         test_loss, correct, len(test_data),
-        100. * correct / len(test_data)))
-    print(correct/len(test_data))
+        100.0 *float( correct) / float(len(test_data)+0.0)))
 
-for epoch in range(1,40):
+for epoch in range(1,80):
     train(epoch)
     test()
 

@@ -111,7 +111,7 @@ def read_clip_and_label(filename, batch_size, start_pos=-1, num_frames_per_clip=
 
 
 
-test_list_file = 'list/all.list'
+test_list_file = 'list/image.list'
 read_clip_and_label(
                     test_list_file,
                     1,

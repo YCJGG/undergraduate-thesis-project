@@ -7,4 +7,6 @@ UCF-101
 *.bmc
 *.rar
 *.zip
+*.pt
+*.pickle
 
